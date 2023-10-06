@@ -1,0 +1,134 @@
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: auto;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url("clickerimages/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+
+.bottom {
+    position: relative;
+    bottom: -500px;
+    left: 20%;
+    right: 0;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pawsDisplay {
+    background-color: #FFC0CB;
+    width: 50%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+#clicker {
+    background-image: url("clickerimages/cat-paw.jpg");
+    background-size: 100% auto; /* Adjust the percentage to control the image size */
+    background-position: center; /* Center the image horizontally */
+    position: relative;
+    transition: all .2s ease-in-out;
+    height: 172px;
+    width: 172px;
+    max-width: auto;
+    top: 125px;
+    
+}
+
+#clicker:hover{
+    transform: scale(1.10);
+}
+#clicker:active{
+    transform: scale(0.99);
+}
+
+#clicker > .number{
+    z-index: 99;
+    font-size: 24px;
+    color: black;
+    position: absolute;
+}
+
+#shop{
+    position: relative;
+    top: -100px;
+    margin: 20px;
+    display: flex;
+    max-width: 100px;
+    max-height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.shopButton{
+    background-color: #b5b5b5;
+    transition: all .2s ease-in-out;
+    border-radius: 10px;
+    max-width: 100px;
+    width: 80%;
+    margin: 10px 0px 10px 0px;
+}
+
+.shopButton:hover{
+    background-color: #c7c7c7;
+    transition: all .2s ease-in-out;
+}
+
+.shopButton img {
+    max-width: 500px; /* Adjust the desired maximum width */
+    max-height: 300px;
+}
+
+.shopButton #image{
+    max-width: 500px;
+    max-height: 100px;
+}
+
+.shopButton image{
+    height: 64px;
+    width: 64px;
+}
+
+.shopButton #nameAndCost p{
+    margin: 0px;
+    width: 60%;
+    color:whitesmoke;
+}
+
+.shopButton #nameAndCost p:first-of-type{
+    font-size: 24px;
+}
+
+.shopButton #amount{
+    font-size: 48px;
+    color: #595959;
+    font-family: roboto;
+    width: 15%;
+}
+
+#bottom-left-buttons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.unselectable{
+    user-select: none;
+}
